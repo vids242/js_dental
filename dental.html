@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/dental.css">
+    <link rel="stylesheet" href="css/font.css">
+</head>
+<style>
+     .error {
+            color: red;
+            font-size: 90%;
+        }
+</style>
+
+<body>
+    <div class="select">
+        <select name="tretment" id="treatment" onchange="hendaltreat()">
+            <option value="">--Select Treatment</option>
+            <option value="tc">Teeth Cleaning</option>
+            <option value="fi">Fillings</option>
+            <option value="rct">Root Canal Tretment</option>
+            <option value="rc">RCT + Cover</option>
+            <option value="br">Braces</option>
+        </select>
+    </div>
+    <div id="disp">
+        <table border="1">
+            <tr>
+                <th>Tretment</th>
+                <th>Seating</th>
+                <th>Costing</th>
+            </tr>
+            <tr>
+                <td id="tre"></td>
+                <td id="set"></td>
+                <td id="cost"></td>
+            </tr>
+        </table>
+
+        <form action="" name="dentalForm" onsubmit="hendalapt()">
+            <span>Book Appointment:</span>
+            <input type="date" name="apt_date" id="apt_date">
+            <span class="error" id="dateErr"></span>
+            <input type="submit" id="submit">
+        </form>
+
+        <div id="disptab">
+
+        </div>
+
+    </div>
+
+
+
+
+    <script src="js/dental.js"></script>
+</body>
+
+</html>
